@@ -1,0 +1,13 @@
+
+
+<h1>Choose a color!</h1>
+
+<% if !@name.nil? %>
+<h2> Welcome back, <%= @name %> </h2>
+<% end %>
+<p><%= link_to "Red", about_path(color: "red") %></p>
+<p><%= link_to "blue", about_path(color: "blue") %></p>
+<p><%= link_to "Purple", about_path(color: "purple") %></p>
+<p><%= link_to "Yellow", about_path(color: "yellow") %></p>
+
+
